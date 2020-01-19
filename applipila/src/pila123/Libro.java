@@ -1,0 +1,33 @@
+package pila123;
+
+public class Libro {
+
+	private String nombreLibro;
+	private String autor;
+	
+	public Libro(){
+		this.nombreLibro="";
+		this.autor="";
+		
+	}
+	
+	public Libro(String nombreLibro, String autor){
+		this.nombreLibro=nombreLibro;
+		this.autor=autor;
+	}
+	
+	public String getTitulo(){
+		return nombreLibro;
+	}
+	public String getAutor(){
+		return autor;
+	}
+	
+	public void setTitulo(String nombreLibro){
+		this.nombreLibro=nombreLibro;
+	}
+	public void setAutor(String autor){
+		this.autor=autor;
+	}
+	
+}

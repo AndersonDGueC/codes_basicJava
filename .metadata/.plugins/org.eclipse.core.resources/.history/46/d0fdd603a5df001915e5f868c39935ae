@@ -1,0 +1,9 @@
+package march;
+import java.io.*;
+public class ManejArch {
+
+	public static void main(String [] args){
+		BufferedRead dat=new BufferedRead(new FileRead("/home/anderson/d.txt"));
+	}
+	
+}

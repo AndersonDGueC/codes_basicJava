@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class TestEquip {
+public static void main(String [] args){
+	boolean ver=true;
+	while(ver){
+		
+	}
+}
+}

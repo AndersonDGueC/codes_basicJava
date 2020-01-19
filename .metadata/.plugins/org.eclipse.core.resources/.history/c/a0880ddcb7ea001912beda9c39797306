@@ -1,0 +1,49 @@
+
+
+import javax.swing.*;
+import java.awt.*;
+
+public class BenefiEconBanc extends JFrame {
+	JLabel [] lt;
+	JButton bt;
+	JPanel [] pt;
+	JTextField []tt;
+	JTextArea ta;
+
+	public BenefiEconBanc(){
+		super("Aplicación CDT");
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLayout(new GridLayout(3,1));
+		lt=new JLabel[3];
+		lt[0]=new JLabel("Dinero a depositar");
+		lt[1]=new JLabel("Porcentaje de interés mensual");
+		lt[2]=new JLabel("número de meses");
+		pt=new JPanel[3];
+		tt=new JTextField[3];
+		ta=new JTextArea();
+		bt=new JButton("Crear Lista");
+		for(int i=0;i<3;i++){
+			pt[i]=new JPanel();
+			tt[i]=new JTextField();
+		}
+		
+		pt[0].setLayout(new GridLayout(3,2));
+		pt[0].add(lt[0]);
+		pt[0].add(tt[0]);
+		pt[0].add(lt[1]);
+		pt[0].add(tt[1]);
+		pt[0].add(lt[2]);
+		pt[0].add(tt[2]);
+		pt[1].setLayout(new GridLayout(1,1));
+		pt[1].add(ta);
+		pt[2].setLayout(new FlowLayout());
+		add(pt[0]);
+		add(pt[1]);
+		setSize(400,500);
+		setVisible(true);
+	}
+	
+	public static void main(String [] args){
+		BenefiEconBanc frame= new BenefiEconBanc();
+	}
+}

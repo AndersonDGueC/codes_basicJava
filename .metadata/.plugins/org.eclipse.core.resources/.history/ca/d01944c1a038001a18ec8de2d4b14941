@@ -1,0 +1,5 @@
+
+public class AlmacenBul {
+private float bultMaxPeso;
+private float bultMinPeso;
+}

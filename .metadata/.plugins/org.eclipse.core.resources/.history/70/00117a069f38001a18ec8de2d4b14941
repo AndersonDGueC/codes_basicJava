@@ -1,0 +1,14 @@
+
+public class RecepTiq {
+	
+	private float pesoBulto;
+	private double precioPorBulto;
+	private int noDeBultos;
+
+	public RecepTiq(){
+		pesoBulto=0;
+		precioPorBulto=0;
+		noDeBultos=0;
+	}
+	
+}

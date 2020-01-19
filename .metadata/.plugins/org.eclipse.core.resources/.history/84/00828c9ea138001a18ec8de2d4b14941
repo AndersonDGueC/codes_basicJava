@@ -1,0 +1,15 @@
+
+import java.util.ArrayList;
+
+public class AlmacenBul {
+private float bultMaxPeso;
+private float bultMinPeso;
+private float promPesoBultos;
+private ArrayList<RecepTiq> almacen;
+
+public AlmacenBul(){
+	this.bultMaxPeso=0;
+	this.bultMinPeso=0;
+	this.promPesoBultos=0;
+}
+}

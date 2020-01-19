@@ -1,0 +1,11 @@
+package march;
+import java.io.*;
+import java.io.File;
+public class ManejArch {
+
+	public static void main(String [] args)throws IOException{
+		
+		System.out.println("La ruta es: ");
+	}
+	
+}

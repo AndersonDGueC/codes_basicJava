@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class TestEquip {
+public static void main(String [] args){
+	boolean ver=true;
+	while(ver){
+		System.out.println("Bienvenido a nuestro sistema de equipaje");
+		System.out.println("ingrese el peso del equipaje");
+		Scanner peso= new Scanner(System.in);
+		if(peso.nextInt()<500){
+			RecepTiq eq=new RecepTiq(peso.nextInt());
+		}
+		else{
+			System.out.println("Error exceso de peso del equipaje debe ser menos a 500kg");
+		}
+	}
+}
+}

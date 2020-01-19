@@ -1,0 +1,43 @@
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class AlmacenBul {
+private float bultMaxPeso;
+private float bultMinPeso;
+private float promPesoBultos;
+private float pesoAcumBultos;
+private List<RecepTiq> almacen;
+private List<Integer> pes;
+
+public AlmacenBul(){
+	this.bultMaxPeso=0;
+	this.bultMinPeso=0;
+	this.promPesoBultos=0;
+	this.pesoAcumBultos=0;
+	this.almacen=new ArrayList<RecepTiq>();
+}
+
+public void agregarPaq(RecepTiq m){
+	pesoAcumBultos=+m.getPesoBulto();
+	
+	almacen.add(m);
+	
+}
+
+public float promPeso(){
+	float cant= (float)almacen.size();
+	
+	
+	return promPesoBultos=pesoAcumBultos/cant;
+}
+
+public float getPesoAcumBultos(){
+	return pesoAcumBultos;
+}
+
+
+}
+

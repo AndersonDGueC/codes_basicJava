@@ -1,0 +1,56 @@
+
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import java.util.Scanner;
+
+public class Control  {
+	private String [] cabeceraT;
+	private List<Producto> listaProducto;
+	private Producto pr;
+	
+	private Producto obetenerProducto(){
+		pr=new Producto();
+		
+		return pr;
+	}
+	
+	public Control(){
+		this.listaProducto=new ArrayList<Producto>(2);
+	}
+	
+	public void agregarProdu(){
+		System.out.println("Agregue el nombre del producto: ");
+		
+	}
+	
+	public Producto ObtenerProductoLista(String id){
+		Producto salida=new Producto();
+		salida=null;
+		for(Producto pr:listaProducto){
+			if(pr.getId().equals(id)){
+			salida=pr;
+			break;
+			}
+			}
+		return salida;
+		
+	}
+	
+	public void menu(){
+		System.out.println("Bienvenido a nuestro Administrador ");
+		System.out.println("Elija la opción respectivamente");
+		System.out.println("1. Agregar producto");
+		System.out.println("2.ver lista de productos");
+		System.out.println("3.Buscar producto");
+		System.out.println("Modificar caracteristicas del producto");
+		System.out.println("Eliminar producto del inventario");
+	}
+	
+	public void iniciarTb(){
+		cabeceraT=new String[3];
+	}
+
+}

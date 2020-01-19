@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class TestEquip {
+public static void main(String [] args){
+	boolean ver=true;
+	while(ver){
+		System.out.println("Bienvenido a nuestro sistema de equipaje");
+		System.out.println("ingrese el peso del equipaje");
+	}
+}
+}
